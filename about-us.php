@@ -19,9 +19,12 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
 		
 		<style>
-			/* Loader styles */
+			/* Loader styles - Commented out */
+			/*
 			#loader {
 				position: fixed;
 				left: 0;
@@ -32,11 +35,12 @@
 				background: url('assets/img/logo/loader.gif') 50% 50% no-repeat rgb(249,249,249);
 				background-size: 150px 150px;
 			}
+			*/
 		</style>
 	</head>
 	<body>
-	    <!-- Loader -->
-		<div id="loader"></div>
+	    		<!-- Loader - Commented out -->
+		<!-- <div id="loader"></div> -->
 		<!--===================================Header Section==============================-->
 		<?php include 'includes/header.php'; ?>
 		<!--=================================Header Section End=============================-->
@@ -368,12 +372,14 @@
 		<script src="assets/js/function.js"></script>
 		<script>
 		
-			// Loader script
+			// Loader script - Commented out
+			/*
 			$(window).on('load', function() {
 				setTimeout(function() {
 					$('#loader').fadeOut('slow');
 				}, 3000); // Delay of 3 seconds
 			});
+			*/
 		</script>
 	</body>
 </html>

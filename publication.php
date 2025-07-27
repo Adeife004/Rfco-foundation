@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="shortcut icon" href="assets/img/logo/logo_f.png" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		
 		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
@@ -123,7 +123,7 @@
 		<!--=================================Footer Section End=============================-->
 
 		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+		
 		<script src="assets/js/countdown.min.js"></script>
 		<script src="assets/js/isotope.pkgd.min.js"></script>
 		<script src="assets/js/isotope-masonry.js"></script>
@@ -136,12 +136,14 @@
 		<script src="assets/js/function.js"></script>
 		<script>
 		
-			// Loader script
+			// Loader script - Commented out
+			/*
 			$(window).on('load', function() {
 				setTimeout(function() {
 					$('#loader').fadeOut('slow');
 				}, 3000); // Delay of 3 seconds
 			});
+			*/
 		</script>
 	</body>
 </html>

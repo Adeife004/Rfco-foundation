@@ -1,36 +1,69 @@
 <?php
-include 'admin/db.php';
+// Start session for security
+session_start();
+
+// Database connection
+require_once 'includes/db.php';
 
 // Ensure the 'contacts' table exists
 try {
     $conn->exec("CREATE TABLE IF NOT EXISTS contacts (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(50) NOT NULL,
-        email VARCHAR(50) NOT NULL,
-        subject VARCHAR(100) NOT NULL,
+        name VARCHAR(100) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        subject VARCHAR(200) NOT NULL,
         message TEXT NOT NULL,
-        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )");
 } catch (PDOException $e) {
-    echo "Error creating table: " . $e->getMessage();
+    $_SESSION['error_message'] = "Database error: " . $e->getMessage();
+    header("Location: contact.php");
+    exit();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    try {
+        // Sanitize and validate input data
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+        $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+        
+        // Validate email
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            throw new Exception("Invalid email format");
+        }
+        
+        // Validate required fields
+        if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+            throw new Exception("All fields are required");
+        }
+        
+        // Prepare SQL statement with placeholders to prevent SQL injection
+        $stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)");
+        
+        // Bind parameters
+        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':subject', $subject, PDO::PARAM_STR);
+        $stmt->bindParam(':message', $message, PDO::PARAM_STR);
 
-    $stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)");
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':subject', $subject);
-    $stmt->bindParam(':message', $message);
-
-    if ($stmt->execute()) {
-        echo "<script>alert('Message sent successfully.'); window.history.back();</script>";
-    } else {
-        echo "<script>alert('Error sending message.'); window.history.back();</script>";
+        if ($stmt->execute()) {
+            $_SESSION['success_message'] = "Message sent successfully! We'll get back to you soon.";
+        } else {
+            throw new Exception("Failed to send message");
+        }
+        
+    } catch (Exception $e) {
+        $_SESSION['error_message'] = "Error: " . $e->getMessage();
     }
+    
+    // Redirect back to contact page
+    header("Location: contact.php");
+    exit();
+} else {
+    // If not POST request, redirect to contact page
+    header("Location: contact.php");
+    exit();
 }
 ?>

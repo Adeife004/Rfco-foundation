@@ -16,7 +16,9 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-		<style>
+		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
+		<!-- <style>
 			/* Loader styles */
 			#loader {
 				position: fixed;
@@ -28,8 +30,8 @@
 				background: url('assets/img/logo/loader.gif') 50% 50% no-repeat rgb(249,249,249);
 				background-size: 150px 150px;
 			}
-		</style>
-		<style>
+		</style> -->
+		<!-- <style>
 			/* Loader styles */
 			#loader {
 				position: fixed;
@@ -47,16 +49,16 @@
 					background-image: url('assets/img/banner/add6.jpeg');
 				}
 			}
-		</style>
+		</style> -->
 	</head>
 	<body>
 	    <!-- Loader -->
-		<div id="loader"></div>
+		<!-- <div id="loader"></div> -->
 <!--===============================Header Section Start==============================-->
 		<?php include 'includes/header.php'; ?>
 		<!--===============================Header Section End==============================-->
 		<!--=================================Banner Section Start=============================-->
-		<div class="banner-section">
+		<!-- <div class="banner-section">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="banner-slide banner-slide-three slide-seven">
@@ -141,11 +143,15 @@
 				</div>
 			</div>
 			<!-- Add Arrows -->
-			<div class="swiper-banner-next"><i class="fa fa-arrow-right"></i></div>
+			<!-- <div class="swiper-banner-next"><i class="fa fa-arrow-right"></i></div>
 			<div class="swiper-banner-prev"><i class="fa fa-arrow-left"></i></div>
-			<div class="banner-pagination"><span></span></div>
-		</div>
+			<div class="banner-pagination"><span></span></div> -->
+		</div> -->
 		<!--=================================Banner Section End=============================-->
+		
+		<!--=================================Hero Section Start=============================-->
+		<?php include 'includes/hero-section.php'; ?>
+		<!--=================================Hero Section End=============================-->
 
 
 		<!--=================================What We Do Start=============================-->
@@ -757,7 +763,7 @@
 				}, 1000);
 			});
 		</script>
-		<script>
+		<!-- <script>
 		
 			// Loader script
 			$(window).on('load', function() {
@@ -765,6 +771,6 @@
 					$('#loader').fadeOut('slow');
 				}, 3000); // Delay of 3 seconds
 			});
-		</script>
+		</script> -->
 	</body>
 </html>

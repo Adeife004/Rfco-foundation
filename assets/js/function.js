@@ -35,6 +35,18 @@ $(document).ready(function(){
     		$(".header-bar").removeClass("m-menu-bar");
     	});
 
+        // Remove any existing plus/minus icons
+        $('.mobile-menu-area .m-menu li a .fa-plus, .mobile-menu-area .m-menu li a .fa-minus').remove();
+        // Add dropdown icon only to items with submenu
+        $('.mobile-menu-area .m-menu > li').each(function() {
+            if($(this).find('ul').length > 0) {
+                var link = $(this).children('a');
+                // Remove any existing dropdown icon to avoid duplicates
+                link.find('.fa-angle-down').remove();
+                link.append(" <i class='fa fa-angle-down'></i>");
+            }
+        });
+
 	    //mobile drodown menu display
         $('.mobile-menu-area .m-menu li a').on('click', function(e) {
             var element = $(this).parent('li');

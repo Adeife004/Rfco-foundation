@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<link rel="shortcut icon" href="assets/img/logo/logo_f.png" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		
 		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
@@ -16,6 +16,8 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
 		
 	</head>
 	<body>
@@ -235,7 +237,7 @@
 		<!--=================================Footer Section End=============================-->
 
 		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+		
 		<script src="assets/js/countdown.min.js"></script>
 		<script src="assets/js/isotope.pkgd.min.js"></script>
 		<script src="assets/js/isotope-masonry.js"></script>
