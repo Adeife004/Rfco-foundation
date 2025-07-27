@@ -1,4 +1,4 @@
-/* Global Padding Variables - Matching Navbar */
+
 :root {
     --navbar-padding-y: 15px;
     --navbar-padding-x: 10px;
@@ -23,7 +23,7 @@ body {
 	background-color: var(--bg-primary);
 }
 
-/* Updated Section Padding to match navbar consistency */
+
 .section-padding {
 	padding: var(--section-padding-top) 0 var(--section-padding-bottom) 0;
 }
@@ -32,23 +32,23 @@ body {
 	padding: 100px 0;
 }
 
-/* Container padding consistency */
+
 .container {
     padding-left: var(--container-padding-x);
     padding-right: var(--container-padding-x);
 }
 
-/* Page header padding adjustment for navbar */
+
 .page-header {
-    padding-top: calc(var(--navbar-padding-y) * 2 + 58px); /* Account for fixed navbar */
+    padding-top: calc(var(--navbar-padding-y) * 2 + 58px);
 }
 
-/* Banner section padding adjustment */
+
 .banner-section {
     padding-top: calc(var(--navbar-padding-y) * 2 + 58px);
 }
 
-/* Mobile responsive adjustments */
+
 @media (max-width: 991px) {
     .container {
         padding-left: var(--mobile-container-padding-x);
@@ -108,7 +108,7 @@ section.header-section {
 }
 
 .bg-color {
-	background-color: var(--bg-secondary);
+	background: linear-gradient(135deg, rgba(33, 147, 176, 0.05), rgba(109, 213, 237, 0.05));
 }
 
 .section-padding {
@@ -139,7 +139,7 @@ section.header-section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(18, 18, 18, 0.8);
+	background-color: rgba(64, 64, 64, 0.8);
 }
 
 body.body-padding {
@@ -199,7 +199,7 @@ body.body-padding {
 }
 
 .mobile-header .header-bar span {
-	background: #2cc391;
+	background: #2193b0;
 	width: 100%;
 	height: 3px;
 	display: block;
@@ -309,19 +309,31 @@ body.body-padding {
 
 .scrollToTop {
 	position: fixed;
-	right: 60px;
+	right: 30px;
+	bottom: 30px;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.scrollToTop.show {
+	opacity: 1;
+	visibility: visible;
 }
 
 .scrollToTop i {
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
-	color: #0071f0;
-	background: #f6faff;
-	border: 1px solid #e7e7e7;
-	border-radius: 3px;
-	font-size: 22px;
+	color: #ffffff;
+	background: linear-gradient(135deg, #2193b0, #6dd5ed);
+	border: 2px solid #2193b0;
+	border-radius: 50%;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(33, 147, 176, 0.3);
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
@@ -330,8 +342,10 @@ body.body-padding {
 }
 
 .scrollToTop i:hover {
-	background: #0071f0;
-	color: #fff;
+	background: linear-gradient(135deg, #1a7a8f, #5bc0d6);
+	color: #ffffff;
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(33, 147, 176, 0.4);
 }
 
 .header-top {
@@ -622,23 +636,23 @@ body.body-padding {
 }
 
 .nav-widget .nav-search input::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	opacity: 1;
-	/* Firefox */
+	
 }
 
 .nav-widget .nav-search input :-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
+	
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 }
 
 .nav-widget .nav-search input ::-ms-input-placeholder {
-	/* Microsoft Edge */
+	
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
@@ -811,7 +825,7 @@ body.body-padding {
 	opacity: 0;
 }
 
-/*========================================Banner Section========================================*/
+
 .banner-section {
 	background-size: cover;
 	background-position: center center;
@@ -1017,14 +1031,17 @@ body.body-padding {
 }
 
 .custom-btn {
-	color: #fff;
-	background: transparent;
-	border: 2px solid #2cc391;
-	font-size: 14px;
-	padding: 13px 17px;
+	background: transparent !important;
+	color: #fff !important;
+	padding: 0.4rem 1.1rem;
+	border-radius: 8px;
 	font-weight: 600;
-	border-radius: 2px;
-	transition: all ease .3s;
+	border: 1.5px solid #2193b0;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(33, 147, 176, 0.18);
+	font-size: 0.92rem;
+	white-space: nowrap;
+	text-decoration: none !important;
 	position: relative;
 	overflow: hidden;
 }
@@ -1035,19 +1052,34 @@ body.body-padding {
 
 .custom-btn:hover,
 .custom-btn.active {
-	background-color: #2cc391;
+	background: transparent !important;
 	color: #fff !important;
-	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(33, 147, 176, 0.3);
+	text-decoration: none !important;
 }
 
 .group-btn .custom-btn {
-	padding: 10px 17px;
-	color: #2cc391;
+	background: transparent !important;
+	color: #fff !important;
+	padding: 0.4rem 1.1rem;
+	border-radius: 8px;
+	font-weight: 600;
+	border: 1.5px solid #2193b0;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(33, 147, 176, 0.18);
+	font-size: 0.92rem;
+	white-space: nowrap;
+	text-decoration: none !important;
 }
 
 .group-btn .custom-btn:hover,
 .group-btn .custom-btn.active {
-	color: #fff;
+	background: transparent !important;
+	color: #fff !important;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(33, 147, 176, 0.3);
+	text-decoration: none !important;
 }
 
 .custom-btn i {
@@ -1097,7 +1129,7 @@ body.body-padding {
 	left: auto;
 }
 
-/*===============================The recent Causes Section=======================*/
+
 .recent-causes-section {
 	padding: 60px 0 110px;
 }
@@ -1254,7 +1286,7 @@ body.body-padding {
 	font-size: 18px;
 }
 
-/*Progress Bar*/
+
 .cause-thumb .circles {
 	position: absolute;
 	top: 30px;
@@ -1309,7 +1341,7 @@ body.body-padding {
 	margin-bottom: 15px;
 }
 
-/* } */
+
 
 .recent-bottom .recent-cause-slider .cause-content .cause-header h5 {
 	margin-top: 0;
@@ -1417,11 +1449,11 @@ body.body-padding {
 
 .cause-item.active .custom-btn,
 .cause-item:hover .custom-btn {
-	background-color: #2cc391;
+	background-color: #2193b0;
 	color: #fff;
 }
 
-/*======================================Skill Bar Linear=======================*/
+
 .skill {
 	background: #2cc391;
 	text-align: right;
@@ -1461,7 +1493,7 @@ canvas {
 
 .back span {
 	display: inline-block;
-	background-color: #2cc391;
+	background-color: #2193b0;
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -1482,7 +1514,7 @@ canvas {
 	line-height: 30px;
 }
 
-/*===================================Causes Grid Section===================================*/
+
 .causes-grid {
 	width: 100%;
 	padding: 15px;
@@ -1693,7 +1725,7 @@ canvas {
 	text-transform: uppercase;
 }
 
-/*=====================Right SideBar Cause====================*/
+
 .widget {
 	margin-bottom: 20px;
 	padding: 0;
@@ -1846,7 +1878,7 @@ article .single-article {
 	border-color: #2cc391;
 }
 
-/*==================================Swiper Buttons=====================================*/
+
 .section-title .swiper-banner-prev {
 	left: auto;
 	right: 70px;
@@ -1871,7 +1903,7 @@ article .single-article {
 	border-color: #2cc391;
 }
 
-/*==================================Doner Section And Archive Section======================================*/
+
 .doner-say-section.section-padding-3 {
 	padding: 100px 0 110px;
 }
@@ -2033,21 +2065,21 @@ article .single-article {
 	background-color: #2cc391;
 }
 
-/*=================================Gallery Section=======================================*/
+
 * {
 	box-sizing: border-box;
 }
 
-/* ---- isotope ---- */
 
-/* clear fix */
+
+
 .grid:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-/* ---- .grid-item ---- */
+
 .grid {
 	margin-bottom: 30px;
 }
@@ -2124,7 +2156,7 @@ article .single-article {
 	background-color: #2cc391;
 }
 
-/*=================gallery grid Three column , foun column ,five-column==============*/
+
 
 .gallery-full-four-column,
 .gallery-full-five-column,
@@ -2162,7 +2194,7 @@ article .single-article {
 	margin-right: -3px;
 }
 
-/*-===========================Count Down Start=============================*/
+
 .count-down-section {
 	background-image: url('../img/banner/count-down.jpg');
 	background-size: cover;
@@ -2207,7 +2239,7 @@ article .single-article {
 	width: 40%;
 	height: 90px;
 	margin: 5px;
-	background-color: #fff;
+	
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -2216,11 +2248,18 @@ article .single-article {
 }
 
 .countdown li .count-number {
-	font-size: 30px;
-	line-height: 30px;
-	font-weight: 700;
-	color: #2cc391;
-	width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000 !important;
+    width: 100%;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
 }
 
 .countdown li .count-text {
@@ -2266,8 +2305,8 @@ article .single-article {
 	margin-bottom: 27px;
 }
 
-/*-===========================Count Down End=============================*/
-/*=============================Our Event=============================*/
+
+
 .event-section .section-title {
 	margin-bottom: 55px;
 }
@@ -2450,7 +2489,7 @@ article .single-article {
 	width: 100%;
 }
 
-/*=================================Donate Section================================*/
+
 .donate-now-section .donate-now h3,
 .donate-now-section.donate-now-main-section .donate-now h3 {
 	line-height: 24px;
@@ -2477,12 +2516,33 @@ article .single-article {
 	flex-wrap: wrap;
 }
 
-select {
-	height: 40px;
-	padding-left: 20px;
-	margin-bottom: 10px;
-	font-size: 14px;
-	border: 1px solid #ebebeb;
+
+select,
+.form-select,
+select.form-control,
+.custom-select,
+.volunteer-form select,
+.volunteer-form .form-group select,
+form select,
+.form-group select,
+
+select[style*="background"],
+.form-select[style*="background"],
+select.form-control[style*="background"],
+.custom-select[style*="background"],
+
+.form-control,
+.form-select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+    border: 1.5px solid #ccc;
+    box-shadow: none !important;
 }
 
 .donate-form .form .group-btn {
@@ -2494,7 +2554,7 @@ select {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 24px;
-	border: 1px solid #2cc391;
+	border: 1px solid #2193b0;
 	border-radius: 3px;
 	cursor: pointer;
 	margin: 0 15px 0 0;
@@ -2512,7 +2572,7 @@ select {
 	width: 100%;
 	height: 100%;
 	top: 0;
-	background: #2cc391;
+	background: #2193b0;
 	-webkit-transition: all ease .3s;
 	-moz-transition: all ease .3s;
 	transition: all ease .3s;
@@ -2545,7 +2605,7 @@ select {
 	width: 100%;
 }
 
-/*===================================Blog Section=====================================*/
+
 .blog-section {
 	padding: 100px 0 110px;
 }
@@ -2599,7 +2659,7 @@ select {
 
 .blog-section .section-wrapper .post-item .post-content {
 	padding: 20px 30px 40px;
-	background-color: #fff;
+	background: linear-gradient(135deg, rgba(33, 147, 176, 0.1), rgba(109, 213, 237, 0.1));
 	position: relative;
 }
 
@@ -2717,11 +2777,11 @@ select {
 	color: #fff;
 }
 
-/*===============================Newslater=========================================*/
+
 .newslater-section {
 	background: url(../img/map-one.png);
 	background-size: cover;
-	background-color: #2cc391;
+	background: linear-gradient(135deg, #2193b0, #6dd5ed);
 }
 
 .newslater-section .section-wrapper {
@@ -2790,7 +2850,19 @@ footer {
 
 .footer-top {
 	padding: 65px 0 35px 0;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #6c757d;
+	position: relative;
+}
+
+.footer-top::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 1px;
+	background-color: #6c757d;
 }
 
 .footer-logo {
@@ -2989,7 +3061,7 @@ footer .footer-left .footer-content p:nth-child(3) i {
 	text-align: center;
 	width: 110px;
 	height: 115px;
-	border: 1px solid #2cc391;
+	border: 1px solid #2193b0;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -3033,11 +3105,11 @@ footer .footer-left .footer-content p:nth-child(3) i {
 }
 
 .event-item .event-content p i {
-	color: #2cc391;
+	color: #2193b0;
 }
 
 .event-item:hover h5 a {
-	color: #2cc391;
+	color: #2193b0;
 }
 
 .two-column-event .section-wrapper .event-item {
@@ -3190,7 +3262,7 @@ footer .footer-left .footer-content p:nth-child(3) i {
 }
 
 .donate-now-section .donate-now {
-	background-color: #fff;
+	background: linear-gradient(135deg, rgba(33, 147, 176, 0.1), rgba(109, 213, 237, 0.1));
 	border-radius: 7px;
 	padding: 20px;
 	width: 100%;
@@ -3274,7 +3346,7 @@ input[type="checkbox"] {
 }
 
 .urgent-top {
-	background-color: #fff;
+	background: linear-gradient(135deg, rgba(33, 147, 176, 0.1), rgba(109, 213, 237, 0.1));
 	padding: 20px 0;
 	box-shadow: 0 0 10px #ebebeb;
 	margin-bottom: 40px;
@@ -4083,4 +4155,357 @@ h6.event-title {
 .main-menu li a .fa-plus,
 .main-menu li a .fa-minus {
     display: none !important;
+}
+
+/* Force blue hover/active for custom-btn (override all) */
+.group-btn .custom-btn:hover,
+.group-btn .custom-btn.active,
+.custom-btn:hover,
+.custom-btn.active {
+    background-color: #2193b0 !important;
+    color: #fff !important;
+    border-color: #2193b0 !important;
+    text-decoration: none !important;
+}
+
+
+
+/* Countdown numbers - force visibility */
+.count-down-section .countdown li .count-number {
+    color: #000000 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/* All buttons: match navbar donate button style exactly */
+.custom-btn,
+.group-btn .custom-btn,
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-light,
+.btn-dark {
+    background: transparent !important;
+    color: #fff !important;
+    padding: 0.4rem 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1.5px solid #2193b0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 147, 176, 0.18);
+    font-size: 0.92rem;
+    white-space: nowrap;
+    text-decoration: none !important;
+}
+
+.custom-btn:hover,
+.custom-btn.active,
+.group-btn .custom-btn:hover,
+.group-btn .custom-btn.active,
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-light:hover,
+.btn-dark:hover {
+    background: transparent !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 147, 176, 0.3);
+    text-decoration: none !important;
+}
+
+/* Make all recent cause cards the same height */
+.recent-cause-slider .cause-item,
+.recent-section .cause-item {
+    min-height: 420px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Progress bar and highlights blue */
+.skill,
+.recent-section .cause-content .skill,
+.cause-item .cause-content h4,
+.cause-content h3,
+.recent-section .cause-content ul li span,
+.recent-cause-slider .cause-content ul li span {
+    background: #2193b0 !important;
+    color: #fff !important;
+}
+
+.cause-item .cause-content h4,
+.cause-content h3,
+.recent-section .cause-content ul li span,
+.recent-cause-slider .cause-content ul li span {
+    color: #2193b0 !important;
+}
+
+/* Progress bar background */
+.skill {
+    background: #2193b0 !important;
+}
+
+/* Progress bar circle (if any) */
+.cause-thumb .circle strong {
+    color: #2193b0 !important;
+}
+
+/* All forms transparent background */
+form,
+input,
+select,
+textarea,
+.volunteer-form-section .section-wrapper .form-group,
+.donate-now-section .section-wrapper .form-group,
+.message-form .form-group {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Force all recent cause cards to have exactly the same height and stretch in their row */
+.recent-cause-slider,
+.recent-section .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.recent-cause-slider .cause-item,
+.recent-section .cause-item {
+    height: 430px;
+    min-height: 430px;
+    max-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Maximum specificity override for select dropdown text color - add at end */
+html body .volunteer-form .form-group select,
+html body form .form-group select,
+html body .donate-now-section .form-group select,
+html body .volunteer-form-section .form-group select,
+html body .message-form .form-group select,
+html body .donate-form .form select,
+html body .volunteer-form select[name="interest"],
+html body form select[name="interest"],
+html body .volunteer-form .form-group select option,
+html body form .form-group select option,
+html body .volunteer-form select[name="interest"] option,
+html body form select[name="interest"] option {
+    color: #000000 !important;
+    background: transparent !important;
+}
+
+/* Comprehensive green to blue color replacement */
+* {
+    color: inherit;
+}
+
+/* Replace all green colors with blue */
+[style*="#2cc391"],
+[style*="color: #2cc391"],
+[style*="background-color: #2cc391"],
+[style*="background: #2cc391"],
+[style*="border-color: #2cc391"],
+[style*="border: 1px solid #2cc391"] {
+    color: #2193b0 !important;
+    background-color: #2193b0 !important;
+    background: #2193b0 !important;
+    border-color: #2193b0 !important;
+    border: 1px solid #2193b0 !important;
+}
+
+/* Specific overrides for common green elements */
+.main-menu li.active a,
+.main-menu li:hover a,
+.main-menu li .submenu li:hover a,
+.main-menu li .submenu li.active a,
+.widget-category ul li a:hover,
+.widget-post li:hover .post-content a,
+.widget.widget-tag .widget-body a:hover,
+.blog-section .section-wrapper .post-item .post-item-inner.active .post-content h5 a,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-content h5 a,
+.blog-section .section-wrapper .post-item .post-item-inner.active .post-content .entry-content .custom-btn,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-content .entry-content .custom-btn,
+.right-side-bar .post-item.active .post-content .entry-content .custom-btn,
+.team-about-bottom .bottom-item.active .custom-btn,
+.cart-icon .cart-item ul li ul li a:hover,
+.donate-now-section .donate-now .donation-status label input~.checkmark,
+.mobile-header .header-bar span,
+.mobile-header .header-bar span:nth-child(1),
+.mobile-header .header-bar span:nth-child(2),
+.mobile-header .header-bar span:nth-child(3),
+.mobile-header .header-bar.m-menu-bar span:nth-child(1),
+.mobile-header .header-bar.m-menu-bar span:nth-child(2),
+.mobile-header .header-bar.m-menu-bar span:nth-child(3),
+.main-menu li:hover a:before,
+.main-menu li.active a:before,
+.main-menu li.active a:after,
+.main-menu li:hover a:after,
+.swiper-banner-next,
+.swiper-banner-prev,
+.swiper-banner-next.active,
+.swiper-banner-prev.active,
+.swiper-banner-next:hover,
+.swiper-banner-prev:hover,
+.section-title .swiper-banner-prev,
+.section-title .swiper-banner-prev:hover,
+.banner-green,
+.skill,
+.back span,
+.cause-item .cause-content h4,
+.cause-content h3,
+.recent-section .cause-content ul li span,
+.recent-cause-slider .cause-content ul li span,
+.cause-thumb .circle strong,
+.event-item .event-thumb,
+.event-item .event-content p i,
+.event-item:hover h5 a,
+.progress-count .back span,
+.donate-now-section .donate-now .donation-status label input:checked~.checkmark,
+.blog-section .section-wrapper .post-item .post-content p i,
+.right-side-bar .post-item .post-content p i,
+.doner-say-section ul li a img,
+.archive-section ul li.full-width i,
+.donor-say-slider .donor-say p i,
+.section-wrapper .do-content ul li i,
+.contact-with-us p i,
+.footer-left .footer-content p i,
+.footer-left .footer-content p:nth-child(3) i {
+    color: #2193b0 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    border: none !important;
+}
+
+/* Newsletter section specific override */
+.newslater-section {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+}
+
+/* Ensure all green backgrounds are replaced with blue */
+[style*="background-color: #2cc391"],
+[style*="background: #2cc391"] {
+    background-color: #2193b0 !important;
+    background: #2193b0 !important;
+}
+
+/* Progress bars and skill bars */
+.skill,
+.back span,
+.progress-count .back span {
+    background: #2193b0 !important;
+}
+
+/* Borders */
+[style*="border: 1px solid #2cc391"],
+[style*="border-color: #2cc391"] {
+	border: 1px solid #2193b0 !important;
+	border-color: #2193b0 !important;
+}
+
+/* Remove hover effects from latest news cards */
+.blog-section .section-wrapper .post-item:hover,
+.blog-section .section-wrapper .post-item .post-item-inner:hover,
+.blog-section .section-wrapper .post-item:hover .post-thumb img,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-thumb img,
+.blog-section .section-wrapper .post-item:hover .post-content h5 a,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-content h5 a,
+.blog-section .section-wrapper .post-item:hover .post-content .entry-content .custom-btn,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-content .entry-content .custom-btn,
+.right-side-bar .post-item:hover,
+.right-side-bar .post-item:hover .post-content h5 a,
+.right-side-bar .post-item:hover .post-content .entry-content .custom-btn {
+	transform: none !important;
+	box-shadow: none !important;
+	background-color: inherit !important;
+	color: inherit !important;
+	opacity: 1 !important;
+	transition: none !important;
+}
+
+/* Remove image hover effects */
+.blog-section .section-wrapper .post-item:hover .post-thumb img,
+.blog-section .section-wrapper .post-item .post-item-inner:hover .post-thumb img {
+	transform: none !important;
+	opacity: 1 !important;
+	filter: none !important;
+}
+
+/* Remove any hover animations */
+.blog-section .section-wrapper .post-item,
+.blog-section .section-wrapper .post-item *,
+.right-side-bar .post-item,
+.right-side-bar .post-item * {
+	transition: none !important;
+}
+
+/* All icons should have transparent backgrounds */
+.fa, .fas, .far, .fab, .fal,
+.fa *, .fas *, .far *, .fab *, .fal *,
+i[class*="fa"], i[class*="fas"], i[class*="far"], i[class*="fab"], i[class*="fal"],
+i[class*="fa"] *, i[class*="fas"] *, i[class*="far"] *, i[class*="fab"] *, i[class*="fal"] * {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* What We Do section icons - change from green to blue */
+.what-to-do-slider .slide-item .what-slide-thumb img {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(77%) saturate(1312%) hue-rotate(170deg) brightness(92%) contrast(92%);
+}
+
+/* Remove hover effects from cause items (Recent Causes section) */
+.cause-item:hover,
+.cause-item:hover *,
+.recent-cause-slider .cause-item:hover,
+.recent-cause-slider .cause-item:hover *,
+.recent-section .cause-item:hover,
+.recent-section .cause-item:hover * {
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	transform: none !important;
+	background-color: inherit !important;
+}
+
+/* Remove specific cause item hover effects */
+.cause-item:hover .cause-thumb img,
+.recent-cause-slider .cause-item:hover .cause-thumb img,
+.recent-section .cause-item:hover .cause-thumb img {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.cause-item:hover .cause-header a,
+.recent-cause-slider .cause-item:hover .cause-header a,
+.recent-section .cause-item:hover .cause-header a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+/* Remove any border effects from cause content */
+.cause-content:hover,
+.cause-content-inner:hover,
+.cause-header:hover {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
 }

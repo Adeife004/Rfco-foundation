@@ -1,30 +1,11 @@
 /* Professional Color Theme - Black and Blue Only */
 /* This file ensures all colors across the website use only black and blue shades */
 
-/* COMPLETE BLACK COLOR REMOVAL - Force all text to white */
-* {
-    color: #ffffff !important;
-}
+/* Professional Color Theme - Black and Blue Only */
+/* This file ensures all colors across the website use only black and blue shades */
 
-/* Override ALL black colors everywhere */
-[style*="black"],
-[style*="#000"],
-[style*="#000000"],
-[style*="rgb(0,0,0)"],
-[style*="rgba(0,0,0"],
-[style*="#2b3539"],
-[style*="#777777"],
-[style*="#666"],
-[style*="#333"],
-[style*="#222"],
-[style*="#111"] {
-    color: #ffffff !important;
-}
-
-/* Force all text elements to white */
-body, p, h1, h2, h3, h4, h5, h6, span, div, label, input, textarea, select, a, li, td, th {
-    color: #ffffff !important;
-}
+/* Remove aggressive black color overrides - allow black colors to be used */
+/* Only override specific elements that should be white */
 
 /* Override any CSS variables that might be black */
 :root {
@@ -35,17 +16,6 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, label, input, textarea, select, a, l
     --text-light: #ffffff !important;
 }
 
-/* Force all content areas to white text */
-.main-content, .content-area, .entry-content, .post-content, .page-content,
-.container, .row, .col, .section, .widget, .sidebar, .footer, .header {
-    color: #ffffff !important;
-}
-
-/* Override Bootstrap and other framework colors */
-.text-dark, .text-black, .text-muted, .text-secondary {
-    color: #ffffff !important;
-}
-
 /* Force all links to be blue or white */
 a {
     color: #2193b0 !important;
@@ -53,11 +23,6 @@ a {
 
 a:hover, a:active, a:focus {
     color: #6dd5ed !important;
-}
-
-/* Override any remaining dark colors */
-[class*="dark"], [class*="black"], [class*="muted"] {
-    color: #ffffff !important;
 }
 
 /* Ensure buttons and interactive elements use blue */
@@ -71,29 +36,11 @@ a:hover, a:active, a:focus {
     color: #ffffff !important;
 }
 
-/* Override any CSS that might be setting black colors */
-*:not(.alert-danger):not(.text-danger):not(.btn-danger):not(.badge-danger) {
-    color: #ffffff !important;
-}
-
 /* Remove any red colors except for danger alerts */
 [style*="#ff0000"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger),
 [style*="#f00"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger),
 [style*="red"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger) {
     background: var(--bg-secondary) !important;
-    color: #ffffff !important;
-}
-
-/* Fix black text issue - Override normalige.css dark colors */
-body,
-p,
-h1, h2, h3, h4, h5, h6,
-span,
-div,
-label,
-input,
-textarea,
-select {
     color: #ffffff !important;
 }
 
@@ -109,7 +56,7 @@ select {
 /* Override any dark colors from normalige.css */
 [style*="#777777"],
 [style*="#2b3539"],
-[style*="#000000"]:not(.glass-navbar):not(.glass-navbar *):not(.hero-section):not(.hero-section *) {
+[style*="#000000"]:not(.glass-navbar):not(.glass-navbar *):not(.hero-section):not(.hero-section *):not(select):not(select *):not(.form-select):not(.form-select *):not(.donation-form):not(.donation-form *) {
     color: #ffffff !important;
 }
 
@@ -171,7 +118,7 @@ a:active {
 }
 
 /* Override any red colors that shouldn't be red */
-*:not(.alert-danger):not(.text-danger):not(.btn-danger):not(.badge-danger) {
+*:not(.alert-danger):not(.text-danger):not(.btn-danger):not(.badge-danger):not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not(.fa *):not(.fas *):not(.far *):not(.fab *):not(.fal *) {
     color: #ffffff !important;
 }
 
@@ -217,51 +164,18 @@ a:active {
 }
 
 /* FINAL OVERRIDE - Remove ALL black colors from entire project */
-/* This ensures no black text appears anywhere */
-
-/* Override any remaining black colors with maximum specificity */
-html *,
-body *,
-div *,
-span *,
-p *,
-h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
-a *,
-li *,
-td *, th *,
-label *,
-input *,
-textarea *,
-select * {
-    color: #ffffff !important;
-}
-
-/* Force all elements to white text regardless of their CSS */
-* {
-    color: #ffffff !important;
-}
-
-/* Override any inline styles that might be setting black colors */
-[style*="color: black"],
-[style*="color:#000"],
-[style*="color:#000000"],
-[style*="color: rgb(0,0,0)"],
-[style*="color:rgba(0,0,0"],
-[style*="color: #2b3539"],
-[style*="color: #777777"],
-[style*="color: #666"],
-[style*="color: #333"],
-[style*="color: #222"],
-[style*="color: #111"] {
-    color: #ffffff !important;
-}
-
-/* Ensure all text is white with maximum priority */
-html, body, div, span, p, h1, h2, h3, h4, h5, h6, a, li, td, th, label, input, textarea, select {
-    color: #ffffff !important;
-}
+/* Specific overrides for elements that should be white */
+/* Only target specific sections that need white text */
 
 /* EXCEPTIONS - Make specific elements black */
+/* FontAwesome icons - preserve original colors */
+.fa, .fas, .far, .fab, .fal,
+.fa *, .fas *, .far *, .fab *, .fal * {
+    color: inherit !important;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
 /* Arrows and navigation elements */
 .swiper-button-next,
 .swiper-button-prev,
@@ -318,6 +232,24 @@ html, body, div, span, p, h1, h2, h3, h4, h5, h6, a, li, td, th, label, input, t
 .entry,
 .entry * {
     color: #000000 !important;
+}
+
+/* Donate form select override - Force black text */
+.donation-form select[name="category"],
+.donation-form select[name="category"] *,
+.donation-form select[name="category"] option,
+.donation-form select[name="category"] option * {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Additional specificity for donate form */
+.donation-form .form-group select,
+.donation-form .form-group select *,
+.donation-form .form-group select option,
+.donation-form .form-group select option * {
+    color: #000000 !important;
+    background-color: #ffffff !important;
 }
 
  
