@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/remove-green.css">
 		<style>
 			/* Loader styles - Commented out */
 			/*
@@ -32,6 +33,31 @@
 				background-size: 150px 150px;
 			}
 			*/
+		</style>
+		<style>
+		/* Comprehensive white background removal for blog page */
+		body {
+			background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+			color: #ffffff !important;
+		}
+		
+		.bg-white, .bg-light, .bg-light-gray, .white-bg, .light-bg {
+			background: transparent !important;
+		}
+		
+		.card, .blog-item, .info-card, .widget {
+			background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+			border: 1px solid #2c3e50 !important;
+		}
+		
+		h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
+		p, span, div { color: #ecf0f1 !important; }
+		
+		input, select, textarea, .form-control {
+			background: rgba(255, 255, 255, 0.1) !important;
+			border: 1px solid rgba(255, 255, 255, 0.2) !important;
+			color: #ffffff !important;
+		}
 		</style>
 	</head>
 	<body>

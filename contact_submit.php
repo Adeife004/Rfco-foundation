@@ -5,22 +5,6 @@ session_start();
 // Database connection
 require_once 'includes/db.php';
 
-// Ensure the 'contacts' table exists
-try {
-    $conn->exec("CREATE TABLE IF NOT EXISTS contacts (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        email VARCHAR(100) NOT NULL,
-        subject VARCHAR(200) NOT NULL,
-        message TEXT NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )");
-} catch (PDOException $e) {
-    $_SESSION['error_message'] = "Database error: " . $e->getMessage();
-    header("Location: contact.php");
-    exit();
-}
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Sanitize and validate input data
@@ -39,19 +23,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("All fields are required");
         }
         
-        // Prepare SQL statement with placeholders to prevent SQL injection
-        $stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)");
-        
-        // Bind parameters
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':subject', $subject, PDO::PARAM_STR);
-        $stmt->bindParam(':message', $message, PDO::PARAM_STR);
+        // Check if database is available
+        if ($database_available && $conn) {
+            // Ensure the 'contacts' table exists
+            try {
+                $conn->exec("CREATE TABLE IF NOT EXISTS contacts (
+                    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                    name VARCHAR(100) NOT NULL,
+                    email VARCHAR(100) NOT NULL,
+                    subject VARCHAR(200) NOT NULL,
+                    message TEXT NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )");
+            } catch (PDOException $e) {
+                throw new Exception("Database error: " . $e->getMessage());
+            }
+            
+            // Prepare SQL statement with placeholders to prevent SQL injection
+            $stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)");
+            
+            // Bind parameters
+            $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':subject', $subject, PDO::PARAM_STR);
+            $stmt->bindParam(':message', $message, PDO::PARAM_STR);
 
-        if ($stmt->execute()) {
-            $_SESSION['success_message'] = "Message sent successfully! We'll get back to you soon.";
+            if ($stmt->execute()) {
+                $_SESSION['success_message'] = "Message sent successfully! We'll get back to you soon.";
+            } else {
+                throw new Exception("Failed to send message");
+            }
         } else {
-            throw new Exception("Failed to send message");
+            // Database not available, handle without database
+            $form_data = [
+                'name' => $name,
+                'email' => $email,
+                'subject' => $subject,
+                'message' => $message
+            ];
+            
+            if (handleFormSubmissionWithoutDB($form_data, 'contact')) {
+                $_SESSION['success_message'] = "Message sent successfully! We'll get back to you soon.";
+            } else {
+                throw new Exception("Failed to send message");
+            }
         }
         
     } catch (Exception $e) {

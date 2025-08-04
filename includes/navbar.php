@@ -371,16 +371,16 @@
                 <li<?php if($current_page == 'about-us.php') echo ' class="active"'; ?>><a href="about-us.php">About Us</a></li>
                 <li<?php if($current_page == 'contact.php') echo ' class="active"'; ?>><a href="contact.php">Contact</a></li>
                 <!-- pages -->
-                <li tabindex="0"<?php if(in_array($current_page, ['gallery.php','blog-left-side-bar.php','get-loan.php','volunteer.php','publication.php','faq.php','pages/testimonials.php'])) echo ' class="active"'; ?>>
+                <li tabindex="0"<?php if(in_array($current_page, ['gallery.php','blog-left-side-bar.php','get-loan.php','volunteer.php','pages/testimonials.php'])) echo ' class="active"'; ?>>
                     <a href="#">Pages <span>&#9662;</span></a>
                     <ul class="dropdown">
                         <li<?php if($current_page == 'gallery.php') echo ' class="active"'; ?>><a href="gallery.php">Gallery</a></li>
                         <li<?php if($current_page == 'blog-left-side-bar.php') echo ' class="active"'; ?>><a href="blog-left-side-bar.php">Blog</a></li>
                         <li<?php if($current_page == 'get-loan.php') echo ' class="active"'; ?>><a href="get-loan.php">Get Loan</a></li>
                         <li<?php if($current_page == 'volunteer.php') echo ' class="active"'; ?>><a href="volunteer.php">Volunteer</a></li>
-                        <li<?php if($current_page == 'publication.php') echo ' class="active"'; ?>><a href="publication.php">Publications</a></li>
+                        
                         <li<?php if($current_page == 'pages/testimonials.php') echo ' class="active"'; ?>><a href="pages/testimonials.php">Testimonials</a></li>
-                        <li<?php if($current_page == 'faq.php') echo ' class="active"'; ?>><a href="faq.php">FAQ</a></li>
+                        
                     </ul>
                 </li>
 

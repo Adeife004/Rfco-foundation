@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
     <link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/remove-green.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/remove-green.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <!-- Header Section -->
@@ -382,19 +383,19 @@
 
     /* Loan Info Section */
     .loan-info-section {
-        background: #f8f9fa;
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
         padding: 80px 0;
     }
 
     .info-card {
-        background: white;
+        background: linear-gradient(135deg, #2c3e50, #34495e);
         padding: 40px 30px;
         border-radius: 15px;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
         height: 100%;
-        border: 1px solid #e9ecef;
+        border: 1px solid #2c3e50;
         margin-bottom: 30px;
     }
 
@@ -419,12 +420,12 @@
     .info-card h3 {
         font-size: 1.5rem;
         font-weight: 700;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 15px;
     }
 
     .info-card p {
-        color: #666;
+        color: #ecf0f1;
         margin-bottom: 20px;
         line-height: 1.6;
     }
@@ -441,7 +442,7 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 10px;
-        color: #333;
+        color: #ecf0f1;
     }
 
     .benefits-list li i {
@@ -451,15 +452,15 @@
 
     /* Loan Form Section */
     .loan-form-section {
-        background: white;
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
         padding: 80px 0;
     }
 
     .loan-form-wrapper {
-        background: #f8f9fa;
+        background: linear-gradient(135deg, #2c3e50, #34495e);
         padding: 40px;
         border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
     .form-header {
@@ -470,12 +471,12 @@
     .form-header h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 15px;
     }
 
     .form-header p {
-        color: #666;
+        color: #ecf0f1;
         font-size: 1.1rem;
     }
 
@@ -646,8 +647,125 @@
         .form-header h2 {
             font-size: 1.8rem;
         }
+        }
+
+    /* Comprehensive white background removal */
+    body {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+        color: #ffffff !important;
     }
-    </style>
+
+    /* Remove all white backgrounds from Bootstrap and other elements */
+    .bg-white,
+    .bg-light,
+    .bg-light-gray,
+    .bg-light-gray-100,
+    .bg-light-gray-200,
+    .bg-light-gray-300,
+    .bg-light-gray-400,
+    .bg-light-gray-500,
+    .white-bg,
+    .light-bg {
+        background: transparent !important;
+    }
+
+    /* Override any card backgrounds */
+    .card,
+    .loan-form-wrapper,
+    .info-card,
+    .page-header,
+    .loan-hero,
+    .loan-info-section,
+    .loan-form-section {
+        background: transparent !important;
+    }
+
+    /* Ensure all sections have dark backgrounds */
+    .loan-hero {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 25%, #2193b0 75%, #6dd5ed 100%) !important;
+    }
+
+    .loan-info-section {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+    }
+
+    .loan-form-section {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+    }
+
+    /* Override any remaining white text */
+    .text-dark,
+    .text-black {
+        color: #ffffff !important;
+    }
+
+    /* Override any form elements that might have white backgrounds */
+    input,
+    select,
+    textarea,
+    .form-control {
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        color: #ffffff !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    /* Additional comprehensive styling to ensure no white backgrounds */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Ensure all text is visible on dark background */
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+    }
+
+    p, span, div {
+        color: #ecf0f1 !important;
+    }
+
+    /* Override any remaining white elements */
+    .white,
+    .light,
+    .light-gray {
+        background: transparent !important;
+        color: #ffffff !important;
+    }
+
+    /* Ensure all sections have proper dark styling */
+    section {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+    }
+
+    /* Override any remaining Bootstrap classes */
+    .container-fluid,
+    .container {
+        background: transparent !important;
+    }
+
+    /* Ensure form elements have proper styling */
+    .form-control:focus {
+        background: rgba(255, 255, 255, 0.15) !important;
+        border-color: #2193b0 !important;
+        box-shadow: 0 0 0 0.2rem rgba(33, 147, 176, 0.25) !important;
+    }
+
+    /* Button styling */
+    .btn-primary {
+        background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+        border: none !important;
+        color: #ffffff !important;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #1a7a8f, #5bc0d9) !important;
+        transform: translateY(-2px) !important;
+    }
+</style>
 
     <!-- Loan Form JavaScript -->
     <script>

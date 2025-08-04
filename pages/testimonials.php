@@ -1,9 +1,5 @@
 <?php
-// Include database connection
-include '../includes/db.php';
-
-// Fetch testimonials from database (if you have a testimonials table)
-// For now, we'll use sample data
+// Testimonials page - Using sample data (no database required)
 $testimonials = [
     [
         'name' => 'Sarah Johnson',

@@ -647,7 +647,7 @@
 			.social-link {
 				width: 40px;
 				height: 40px;
-				background: white;
+				background: linear-gradient(135deg, #2c3e50, #34495e);
 				border-radius: 50%;
 				display: flex;
 				align-items: center;
@@ -709,12 +709,12 @@
 				height: 100%;
 				display: flex;
 				flex-direction: column;
-				background: #ffffff;
+				background: linear-gradient(135deg, #2c3e50, #34495e);
 				border-radius: 15px;
 				overflow: hidden;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 				transition: all 0.4s ease;
-				border: 1px solid #f0f0f0;
+				border: 1px solid #2c3e50;
 			}
 			
 			.post-item:hover {

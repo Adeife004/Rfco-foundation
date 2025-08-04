@@ -260,6 +260,38 @@ a[href*="green"]:hover {
     color: #1a7a8f !important;
 }
 
+/* Comprehensive White Background Removal - Global Override */
+body {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+    color: #ffffff !important;
+}
+
+/* Remove all white backgrounds */
+.bg-white, .bg-light, .bg-light-gray, .white-bg, .light-bg {
+    background: transparent !important;
+}
+
+/* Card backgrounds */
+.card, .testimonial-card, .contact-card, .info-card, .loan-form-wrapper {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    border: 1px solid #2c3e50 !important;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
+p, span, div { color: #ecf0f1 !important; }
+
+/* Form elements */
+input, select, textarea, .form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
 /* Bootstrap 5 Specific Overrides */
 .btn.btn-success,
 .btn.btn-outline-success {

@@ -25,6 +25,93 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/remove-green.css">
     <link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/gallery-styles.css">
+    <style>
+    /* Comprehensive white background removal for gallery page */
+    body {
+        background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+        color: #ffffff !important;
+    }
+    
+    .bg-white, .bg-light, .bg-light-gray, .white-bg, .light-bg {
+        background: transparent !important;
+    }
+    
+    .card, .gallery-item, .info-card {
+        background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+        border: 1px solid #2c3e50 !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
+    p, span, div { color: #ecf0f1 !important; }
+    
+    input, select, textarea, .form-control {
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        color: #ffffff !important;
+    }
+
+    /* Gallery Centering Styles */
+    .gallery-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gallery-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gallery-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .gallery-item-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gallery-image {
+        object-position: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ensure gallery filters are centered */
+    .gallery-filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .filter-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
