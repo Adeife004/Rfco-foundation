@@ -431,7 +431,7 @@
                         </ul>
                         <div class="hero-button-group">
                             <a href="donate.php" class="hero-btn active">Make Impact<i class="fa fa-angle-double-right"></i></a>
-                            <a href="gallery-grid.php" class="hero-btn">View Gallery<i class="fa fa-angle-double-right"></i></a>
+                            <a href="gallery.php" class="hero-btn">View Gallery<i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>

@@ -342,7 +342,7 @@ body.body-padding {
 }
 
 .scrollToTop i:hover {
-	background: linear-gradient(135deg, #1a7a8f, #5bc0d6);
+	background: linear-gradient(135deg, #2193b0, #6dd5ed);
 	color: #ffffff;
 	transform: translateY(-3px);
 	box-shadow: 0 6px 20px rgba(33, 147, 176, 0.4);

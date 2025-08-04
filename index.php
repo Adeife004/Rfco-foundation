@@ -1,23 +1,34 @@
+<?php
+// Aggressive cache-busting headers
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Rev. Fr. Calistus Osiaga Foundation</title>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<title>Rev. Fr. Calistus Osiaga Foundation - <?php echo date('H:i:s'); ?></title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<link rel="shortcut icon" href="assets/img/logo/logo_f.png" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" type="text/css" href="assets/css/remove-green.css?v=<?php echo time(); ?>">
 		<!-- <style>
 			/* Loader styles */
 			#loader {
@@ -98,7 +109,7 @@
 						<div class="banner-content-container">
 							<div class="container">
 								<div class="banner-content add-left">
-									<h3 class="banner-green">Together, </h3>
+									<h3 class="banner-blue">Together, </h3>
 									<h1>
 										We Build Brighter Futures
 									</h1>
@@ -404,140 +415,7 @@
 		<!--=================================Volunteer Section End===============================-->
 
 
-		<!--=================================Recent Cause Section Start===============================-->
-		<section class="recent-causes-section">
-			<div class="container">
-				<div class="recent-bottom add-gutters">
-					<div class="section-title">
-						<h3>Recent Causes</h3>
-						<p>
-							Explore our recent causes and see how you can contribute to making a positive impact in the lives of those in need.
-						</p>					
-						<div class="swiper-banner-next"><i class="fa fa-angle-right"></i></div>
-						<div class="swiper-banner-prev"><i class="fa fa-angle-left"></i></div>
-					</div>
-					<div class="recent-cause-slider add-gutters recent-cause-slider-2">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="slide-inner">
-									<div class="cause-item  wow fadeInDown" style="animation-duration: 2s;">
-										<div class="cause-thumb">
-											<a href="#"><img src="assets/img/banner/33.jpg" alt="recent-cause"></a>
-										</div>
-										<div class="cause-content">
-											<div class="cause-content-inner">
-												<div class="cause-header">
-													<h5><a href="donate.php">Empowering Widows Through Skill Acquisition</a></h5>
-												</div>
-												<ul>
-													<li>
-														<span>Join Us</span>
-														<p>Pledged</p>
-													</li>
-													<li>
-														<span>Join Us</span>
-														<p>Donors</p>
-													</li>
-													<li>
-														<span>[]</span>
-														<p>Days to go</p>
-													</li>
-												</ul>
-												<div class="group-btn text-center">
-													<a class="custom-btn" href="contact-us.php">DONATE NOW <i class="fa fa-angle-double-right"></i></a>
-												</div>
-											</div>
-											<div class="pro-position">
-												<div class="back skillbar" data-percent="45%">
-													<div class="skill skillbar-bar" style="height:5px;width:0%"><span>45%</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="slide-inner">
-									<div class="cause-item">
-										<div class="cause-thumb">
-											<a href="donate.php"><img src="assets/img/banner/20.webp" alt="recent-cause"></a>
-										</div>
-										<div class="cause-content">
-											<div class="cause-content-inner">
-												<div class="cause-header">
-													<h5><a href="#">Scholarships for Indigent Children</a></h5>
-												</div>
-												<ul>
-													<li>
-														<span>Join Us</span>
-														<p>Pledged</p>
-													</li>
-													<li>
-														<span>Join Us</span>
-														<p>Donors</p>
-													</li>
-													<li>
-														<span>[]</span>
-														<p>Days to go</p>
-													</li>
-												</ul>
-												<div class="group-btn text-center">
-													<a class="custom-btn" href="donate.php">DONATE NOW <i class="fa fa-angle-double-right"></i></a>
-												</div>
-											</div>
-											<div class="pro-position">
-												<div class="back skillbar" data-percent="86%">
-													<div class="skill skillbar-bar" style="height:5px;width:0%"><span>86%</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="slide-inner">
-									<div class="cause-item  wow fadeInDown" style="animation-duration: 2s;">
-										<div class="cause-thumb">
-											<a href="donate.php"><img src="assets/img/banner/wheelchair.jpg" alt="recent-cause"></a>
-										</div>
-										<div class="cause-content">
-											<div class="cause-content-inner">
-												<div class="cause-header">
-													<h5><a href="donate.php">Supporting Physically Challenged Individuals</a></h5>
-												</div>
-												<ul>
-													<li>
-														<span>Join Us</span>
-														<p>Pledged</p>
-													</li>
-													<li>
-														<span>Join Us</span>
-														<p>Donors</p>
-													</li>
-													<li>
-														<span>[]</span>
-														<p>Days to go</p>
-													</li>
-												</ul>
-												<div class="group-btn text-center">
-													<a class="custom-btn" href="donate.php">DONATE NOW <i class="fa fa-angle-double-right"></i></a>
-												</div>
-											</div>
-											<div class="pro-position">
-												<div class="back skillbar" data-percent="95%">
-													<div class="skill skillbar-bar" style="height:5px;width:0%"><span>95%</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--===============================Recent Cause Section End===============================-->
+
 
 
 		<!--===============================Donate Now Section Stat===============================-->
@@ -602,7 +480,7 @@
 					<div class="post-item post-item-3 wow fadeInUp">
 						<div class="post-item-inner">
 							<div class="post-thumb">
-								<a href="causes-grid.php"><img src="assets/img/banner/26.jpg" alt="blog"></a>
+								<a href="about-us.php"><img src="assets/img/banner/26.jpg" alt="blog"></a>
 							</div>
 							<div class="post-content">
 								<div class="entry-header">
@@ -617,12 +495,12 @@
 											<i class="fa fa-comment"></i>16
 										</p>
 									</div>
-									<h5><a href="causes-grid.php">Empowering Widows Through Skill Acquisition</a></h5>
+									<h5><a href="about-us.php">Empowering Widows Through Skill Acquisition</a></h5>
 									<div class="entry-content">
 										<p>
 											Our recent skill acquisition program has empowered widows with the skills needed to start their own businesses.
 										</p>
-										<a href="causes-grid.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
+										<a href="about-us.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -631,7 +509,7 @@
 					<div class="post-item post-item-3">
 						<div class="post-item-inner">
 							<div class="post-thumb">
-								<a href="causes-grid.php"><img src="assets/img/banner/27.jpg" alt="blog"></a>
+								<a href="about-us.php"><img src="assets/img/banner/27.jpg" alt="blog"></a>
 							</div>
 							<div class="post-content">
 								<div class="entry-header">
@@ -646,12 +524,12 @@
 											<i class="fa fa-comment"></i>10
 										</p>
 									</div>
-									<h5><a href="causes-grid.php">Scholarships for Indigent Children</a></h5>
+									<h5><a href="about-us.php">Scholarships for Indigent Children</a></h5>
 									<div class="entry-content">
 										<p>
 											We have awarded scholarships to indigent children, ensuring they have access to quality education.
 										</p>
-										<a href="causes-grid.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
+										<a href="about-us.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -675,12 +553,12 @@
 											<i class="fa fa-comment"></i>8
 										</p>
 									</div>
-									<h5><a href="causes-grid.php">Supporting Physically Challenged Individuals</a></h5>
+									<h5><a href="about-us.php">Supporting Physically Challenged Individuals</a></h5>
 									<div class="entry-content">
 										<p>
 											Our foundation has provided assistive technologies and rehabilitation services to 30 physically challenged individuals.
 										</p>
-										<a href="causes-grid.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
+										<a href="about-us.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -718,18 +596,18 @@
 		<!--=================================Footer Section End=============================-->
 
 
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/countdown.min.js"></script>
-		<script src="assets/js/isotope.pkgd.min.js"></script>
-		<script src="assets/js/isotope-masonry.js"></script>
-		<script src="assets/js/lightcase.js"></script>
-		<script src="assets/js/swiper.min.js"></script>
-		<script src="assets/js/waypoint.js"></script>
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/progress.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/function.js"></script>
+		<script src="assets/js/jquery.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/bootstrap.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/countdown.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/isotope.pkgd.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/isotope-masonry.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/lightcase.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/swiper.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/waypoint.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/jquery.counterup.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/progress.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/wow.min.js?v=<?php echo time(); ?>"></script>
+		<script src="assets/js/function.js?v=<?php echo time(); ?>"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				// Set the date we're counting down to

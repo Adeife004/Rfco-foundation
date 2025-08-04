@@ -1,0 +1,285 @@
+/* Remove All Green Colors - Global Override */
+
+/* Bootstrap Green Overrides */
+:root {
+    --green: #2193b0 !important;
+    --teal: #2193b0 !important;
+    --success: #2193b0 !important;
+}
+
+/* Button Overrides */
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #2193b0 !important;
+    border-color: #2193b0 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-success,
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+    color: #2193b0 !important;
+    border-color: #2193b0 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #2193b0 !important;
+    color: #ffffff !important;
+}
+
+/* Badge Overrides */
+.badge-success {
+    background-color: #2193b0 !important;
+    color: #ffffff !important;
+}
+
+.badge-success[href]:hover {
+    background-color: #1a7a8f !important;
+}
+
+/* Background Overrides */
+.bg-success {
+    background-color: #2193b0 !important;
+}
+
+.bg-teal {
+    background-color: #2193b0 !important;
+}
+
+/* Text Color Overrides */
+.text-success {
+    color: #2193b0 !important;
+}
+
+.text-success:hover {
+    color: #1a7a8f !important;
+}
+
+/* Border Overrides */
+.border-success {
+    border-color: #2193b0 !important;
+}
+
+.border-teal {
+    border-color: #2193b0 !important;
+}
+
+/* Form Validation Overrides */
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: #2193b0 !important;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    border-color: #2193b0 !important;
+    box-shadow: 0 0 0 0.2rem rgba(33, 147, 176, 0.25) !important;
+}
+
+.valid-feedback {
+    color: #2193b0 !important;
+}
+
+/* Custom Green Classes */
+.banner-green,
+.banner-blue,
+.text-green,
+.bg-green,
+.green-text,
+.green-bg {
+    color: #2193b0 !important;
+    background-color: #2193b0 !important;
+}
+
+/* Icon Overrides */
+.fa-check,
+.fa-check-circle,
+.fa-check-square,
+.fa-thumbs-up,
+.fa-star,
+.fa-heart {
+    color: #2193b0 !important;
+}
+
+/* Progress Bar Overrides */
+.progress-bar.bg-success {
+    background-color: #2193b0 !important;
+}
+
+/* Alert Overrides */
+.alert-success {
+    background-color: rgba(33, 147, 176, 0.1) !important;
+    border-color: #2193b0 !important;
+    color: #2193b0 !important;
+}
+
+/* List Group Overrides */
+.list-group-item-success {
+    background-color: rgba(33, 147, 176, 0.1) !important;
+    color: #2193b0 !important;
+}
+
+/* Table Overrides */
+.table-success,
+.table-success > th,
+.table-success > td {
+    background-color: rgba(33, 147, 176, 0.1) !important;
+}
+
+/* Nav Overrides */
+.nav-pills .nav-link.active {
+    background-color: #2193b0 !important;
+}
+
+/* Pagination Overrides */
+.page-item.active .page-link {
+    background-color: #2193b0 !important;
+    border-color: #2193b0 !important;
+}
+
+/* Dropdown Overrides */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #2193b0 !important;
+}
+
+/* Custom Components */
+.success-icon,
+.green-icon,
+.check-icon {
+    color: #2193b0 !important;
+}
+
+/* Hover States */
+.btn-success:hover,
+.btn-outline-success:hover,
+.badge-success[href]:hover,
+.text-success:hover {
+    background-color: #1a7a8f !important;
+    color: #ffffff !important;
+}
+
+/* Focus States */
+.btn-success:focus,
+.btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(33, 147, 176, 0.5) !important;
+}
+
+/* Active States */
+.btn-success:active,
+.btn-outline-success:active {
+    background-color: #1a7a8f !important;
+    border-color: #1a7a8f !important;
+}
+
+/* Disabled States */
+.btn-success:disabled,
+.btn-outline-success:disabled {
+    background-color: #6dd5ed !important;
+    border-color: #6dd5ed !important;
+    color: #ffffff !important;
+}
+
+/* Gradient Overrides */
+.bg-gradient-success {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+}
+
+/* Shadow Overrides */
+.shadow-success {
+    box-shadow: 0 0.5rem 1rem rgba(33, 147, 176, 0.15) !important;
+}
+
+/* Animation Overrides */
+@keyframes success-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(33, 147, 176, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(33, 147, 176, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(33, 147, 176, 0);
+    }
+}
+
+.success-pulse {
+    animation: success-pulse 2s infinite;
+}
+
+/* Additional Green Color Overrides */
+[class*="green"],
+[class*="success"] {
+    color: #2193b0 !important;
+    background-color: #2193b0 !important;
+    border-color: #2193b0 !important;
+}
+
+/* Specific Icon Overrides */
+.fa-check-circle,
+.fa-check-square,
+.fa-thumbs-up,
+.fa-star,
+.fa-heart,
+.fa-leaf,
+.fa-tree,
+.fa-seedling {
+    color: #2193b0 !important;
+}
+
+/* Progress and Status Overrides */
+.progress-bar-success,
+.progress-bar.bg-success {
+    background-color: #2193b0 !important;
+}
+
+.status-success,
+.status-green {
+    color: #2193b0 !important;
+    background-color: rgba(33, 147, 176, 0.1) !important;
+}
+
+/* Form Element Overrides */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    accent-color: #2193b0 !important;
+}
+
+/* Link Overrides */
+a[href*="success"],
+a[href*="green"] {
+    color: #2193b0 !important;
+}
+
+a[href*="success"]:hover,
+a[href*="green"]:hover {
+    color: #1a7a8f !important;
+}
+
+/* Bootstrap 5 Specific Overrides */
+.btn.btn-success,
+.btn.btn-outline-success {
+    --bs-btn-color: #ffffff !important;
+    --bs-btn-bg: #2193b0 !important;
+    --bs-btn-border-color: #2193b0 !important;
+    --bs-btn-hover-color: #ffffff !important;
+    --bs-btn-hover-bg: #1a7a8f !important;
+    --bs-btn-hover-border-color: #1a7a8f !important;
+}
+
+/* Utility Classes */
+.green-to-blue {
+    color: #2193b0 !important;
+}
+
+.green-bg-to-blue {
+    background-color: #2193b0 !important;
+}
+
+.green-border-to-blue {
+    border-color: #2193b0 !important;
+} 

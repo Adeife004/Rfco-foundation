@@ -13,11 +13,12 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/color-theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/remove-green.css">
 	</head>
 	<body>
 		<!--===================================Header Section==============================-->

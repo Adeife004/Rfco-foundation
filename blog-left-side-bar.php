@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/normalige.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/consistent-padding.css">
@@ -113,87 +113,57 @@
 										<ul>
 											<li>
 												<div class="post-thumb">
-													<a href="causes-grid.php"><img src="assets/img/banner/26.jpg" alt="widget"></a>
+													<a href="about-us.php"><img src="assets/img/banner/26.jpg" alt="widget"></a>
 												</div>
 												<div class="post-content">
-													<a href="causes-grid.php">Empowering Widows Through Skill Acquisition</a>
+													<a href="about-us.php">Empowering Widows Through Skill Acquisition</a>
 													<p>2025</p>
 												</div>
 											</li>
 											<li>
 												<div class="post-thumb">
-													<a href="causes-grid.php"><img src="assets/img/banner/27.jpg" alt="widget"></a>
+													<a href="about-us.php"><img src="assets/img/banner/27.jpg" alt="widget"></a>
 												</div>
 												<div class="post-content">
-													<a href="causes-grid.php">Scholarships for Indigent Children</a>
+													<a href="about-us.php">Scholarships for Indigent Children</a>
 													<p>2025</p>
 												</div>
 											</li>
 											<li>
 												<div class="post-thumb">
-													<a href="causes-grid.php"><img src="assets/img/banner/15.jpg" alt="widget"></a>
+													<a href="about-us.php"><img src="assets/img/banner/15.jpg" alt="widget"></a>
 												</div>
 												<div class="post-content">
-													<a href="causes-grid.php">Supporting Physically Challenged Individuals</a>
+													<a href="about-us.php">Supporting Physically Challenged Individuals</a>
 													<p>2025</p>
 												</div>
 											</li>
 											<li>
 												<div class="post-thumb">
-													<a href="causes-grid.php"><img src="assets/img/banner/35.jpg" alt="widget"></a>
+													<a href="about-us.php"><img src="assets/img/banner/35.jpg" alt="widget"></a>
 												</div>
 												<div class="post-content">
-													<a href="causes-grid.php">Community Development and Outreach</a>
+													<a href="about-us.php">Community Development and Outreach</a>
 													<p>2025</p>
 												</div>
 											</li>
 										</ul>
 									</div>
 								</div>
-								<div class="widget widget-causes">
-									<div class="widget-inner">
-										<div class="widget-heading">
-											<h5>Urgent Causes</h5>
-										</div>
-										<div class="widget-item">
-											<div class="widget-thumb">
-												<img src="assets/img/widget/05.jpg" alt="widget">
-											</div>
-											<div class="widget-content">
-												<a href="#">Building Children School</a>
-											</div>
-										</div>
-										<div class="widget-item">
-											<div class="widget-thumb">
-												<img src="assets/img/widget/06.jpg" alt="widget">
-											</div>
-											<div class="widget-content">
-												<a href="#">Pure Water for People</a>
-											</div>
-										</div>
-										<div class="widget-item">
-											<div class="widget-thumb">
-												<img src="assets/img/widget/07.jpg" alt="widget">
-											</div>
-											<div class="widget-content">
-												<a href="#">Fresh Food for Children</a>
-											</div>
-										</div>
-									</div>
-								</div>
+
 								<div class="widget widget-tag">
 									<div class="widget-inner">
 										<div class="widget-heading">
 											<h5>Features Tags</h5>
 										</div>
 										<div class="widget-body">
-											<a href="tag-charity.php">Charity</a>
-											<a href="tag-children.php">Children</a>
-											<a href="tag-fund-raising.php">Fund Raising</a>
-											<a href="tag-food.php">Food</a>
-											<a href="tag-education.php">Education</a>
-											<a href="tag-community.php">Community</a>
-											<a href="tag-health.php">Health</a>
+																			<span class="tag">Charity</span>
+								<span class="tag">Children</span>
+								<span class="tag">Fund Raising</span>
+								<span class="tag">Food</span>
+								<span class="tag">Education</span>
+								<span class="tag">Community</span>
+								<span class="tag">Health</span>
 										</div>
 									</div>
 								</div>
@@ -247,26 +217,26 @@
 									echo '<div class="post-item">';
 									echo '<div class="post-item-inner">';
 									echo '<div class="post-thumb">';
-									echo '<a href="causes-grid.php"><img src="' . $post['image'] . '" alt="blog"></a>';
+									echo '<a href="about-us.php"><img src="' . $post['image'] . '" alt="blog"></a>';
 									echo '</div>';
 									echo '<div class="post-content">';
 									echo '<div class="entry-header">';
 									echo '<h6>' . $post['category'] . '</h6>';
-									echo '<h5><a href="causes-grid.php">' . $post['title'] . '</a></h5>';
+									echo '<h5><a href="about-us.php">' . $post['title'] . '</a></h5>';
 									echo '<div class="entry-meta">';
 									echo '<p class="posted-on">';
-									echo '<i class="fas fa-calendar-alt"></i><a href="causes-grid.php">' . $post['date'] . '</a>';
+									echo '<i class="fas fa-calendar-alt"></i><a href="about-us.php">' . $post['date'] . '</a>';
 									echo '</p>';
 									echo '<p>';
-									echo '<i class="fas fa-user-alt"></i><a href="causes-grid.php">' . $post['author'] . '</a>';
+									echo '<i class="fas fa-user-alt"></i><a href="about-us.php">' . $post['author'] . '</a>';
 									echo '</p>';
 									echo '<p class="cat-link">';
-									echo '<a href="causes-grid.php"><i class="fa fa-comment"></i></a>' . $post['comments'];
+									echo '<a href="about-us.php"><i class="fa fa-comment"></i></a>' . $post['comments'];
 									echo '</p>';
 									echo '</div>';
 									echo '<div class="entry-content">';
 									echo '<p>' . $post['excerpt'] . '</p>';
-									echo '<a href="causes-grid.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>';
+									echo '<a href="about-us.php" class="custom-btn">Read More<i class="fa fa-angle-double-right"></i></a>';
 									echo '</div>';
 									echo '</div>';
 									echo '</div>';

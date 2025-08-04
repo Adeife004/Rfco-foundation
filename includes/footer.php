@@ -67,8 +67,9 @@
                         <ul class="footer-links">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about-us.php">About Us</a></li>
-                            <li><a href="causes-grid.php">Our Causes</a></li>
-                            <li><a href="gallery-grid.php">Gallery</a></li>
+
+                            <li><a href="gallery.php">Gallery</a></li>
+                                                         <li><a href="pages/testimonials.php">Testimonials</a></li>
                             <li><a href="blog-left-side-bar.php">Blog</a></li>
                             <li><a href="contact.php">Contact</a></li>
                         </ul>
@@ -78,10 +79,10 @@
                     <div class="footer-links-section">
                         <h5 class="footer-title">Our Programs</h5>
                         <ul class="footer-links">
-                            <li><a href="causes-grid.php">Education Support</a></li>
-                            <li><a href="causes-grid.php">Widow Empowerment</a></li>
-                            <li><a href="causes-grid.php">Skill Acquisition</a></li>
-                            <li><a href="causes-grid.php">Healthcare Support</a></li>
+                            <li><a href="about-us.php">Education Support</a></li>
+                            <li><a href="about-us.php">Widow Empowerment</a></li>
+                            <li><a href="about-us.php">Skill Acquisition</a></li>
+                            <li><a href="about-us.php">Healthcare Support</a></li>
                             <li><a href="get-loan.php">Micro Credit Scheme</a></li>
                             <li><a href="volunteer.php">Volunteer Program</a></li>
                         </ul>
