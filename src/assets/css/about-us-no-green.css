@@ -1,0 +1,785 @@
+﻿/* About Us Page - Remove All Green Colors */
+/* This file removes all green colors and replaces them with blue colors */
+
+/* Replace all green colors with blue colors */
+.main-menu li:hover a {
+    color: #2563eb !important;
+}
+
+.main-menu li:hover a:before {
+    background-color: #2563eb !important;
+}
+
+.main-menu li.active a:before {
+    background-color: #2563eb !important;
+}
+
+.main-menu li.active a:after,
+.main-menu li:hover a:after {
+    background-color: #2563eb !important;
+}
+
+.main-menu li .submenu li:hover a,
+.main-menu li .submenu li.active a {
+    color: #2563eb !important;
+}
+
+.header-button a {
+    background-color: #2563eb !important;
+}
+
+.header-button a:hover {
+    background-color: #60a5fa !important;
+}
+
+/* Banner and content areas */
+.banner-green {
+    color: #2563eb !important;
+}
+
+.banner-content-container .banner-content h3,
+.banner-content-container .banner-content h1,
+.banner-content-container .banner-content h2 {
+    color: #2563eb !important;
+}
+
+.banner-content-container .banner-content ul li i {
+    color: #2563eb !important;
+}
+
+/* Custom buttons */
+.custom-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.custom-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+.custom-btn.btn-two {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.custom-btn.btn-two:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Section titles and headings */
+.section-title h3 {
+    color: #2563eb !important;
+}
+
+.section-title p {
+    color: #2563eb !important;
+}
+
+/* Team about section */
+.team-about-section .section-wrapper .post-content h3 {
+    color: #2563eb !important;
+}
+
+.team-about-bottom .bottom-item h2 {
+    color: #2563eb !important;
+}
+
+.team-about-bottom .bottom-item.active h2 {
+    color: #60a5fa !important;
+}
+
+.team-about-bottom .custom-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.team-about-bottom .custom-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+.team-about-bottom .bottom-item.active .custom-btn {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Page header */
+.page-header-content-area ul li a.active,
+.page-header-content-area ul li a:hover {
+    color: #2563eb !important;
+}
+
+.page-header-content-area ul li a:after {
+    background-color: #2563eb !important;
+}
+
+.page-header-content-area ul li:last-child a:after {
+    background-color: #2563eb !important;
+}
+
+/* Archive and donor sections */
+.archive-section h3,
+.doner-say-section h3 {
+    color: #2563eb !important;
+}
+
+.archive-section ul li h3,
+.doner-say-section ul li h3 {
+    color: #2563eb !important;
+}
+
+.doner-say-section ul li a {
+    color: #2563eb !important;
+}
+
+.donor-say-slider .donor-say .donor-say-content h5 a {
+    color: #2563eb !important;
+}
+
+.donor-say-slider .donor-say p i {
+    color: #2563eb !important;
+}
+
+/* Archive pagination */
+.archive-pagination span {
+    background-color: #2563eb !important;
+}
+
+/* Grid and gallery items */
+.grid-item-inner:hover .grid-icon a {
+    background-color: #2563eb !important;
+}
+
+.grid-icon a:hover {
+    background-color: #60a5fa !important;
+}
+
+/* Event sections */
+.event-date {
+    background-color: #2563eb !important;
+}
+
+.event-date h3 {
+    color: #ffffff !important;
+}
+
+.event-date p {
+    color: #ffffff !important;
+}
+
+.event-item .event-content h5 a {
+    color: #2563eb !important;
+}
+
+.event-item:hover h5 a {
+    color: #60a5fa !important;
+}
+
+.event-item .event-content p i {
+    color: #2563eb !important;
+}
+
+/* Donate sections */
+.donate-now-section .donate-now h3,
+.donate-content .section-title h3 {
+    color: #2563eb !important;
+}
+
+.donate-form .group-btn .donate-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.donate-form .group-btn .donate-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+.donate-now-section .donate-now .donation-status label input:checked~.checkmark {
+    background-color: #2563eb !important;
+}
+
+/* Blog sections */
+.blog-section .section-wrapper .post-item h5 a {
+    color: #2563eb !important;
+}
+
+.blog-section .section-wrapper .post-item:hover h5 a {
+    color: #60a5fa !important;
+}
+
+.blog-section .section-wrapper .post-item .post-content p i {
+    color: #2563eb !important;
+}
+
+.blog-section .section-wrapper .post-item .post-content .entry-content .custom-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.blog-section .section-wrapper .post-item .post-content .entry-content .custom-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+.blog-date {
+    background-color: #2563eb !important;
+}
+
+.blog-date h3 {
+    color: #ffffff !important;
+}
+
+.blog-date p {
+    color: #ffffff !important;
+}
+
+/* Newslater section */
+.newslater-section {
+    background-color: #2563eb !important;
+}
+
+.news-item .news-button .custom-btn {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+.news-item .news-button .custom-btn:hover {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Footer */
+footer .footer-left .footer-content p i {
+    color: #2563eb !important;
+}
+
+footer .footer-left ul li a {
+    color: #2563eb !important;
+}
+
+footer .footer-left ul li a:hover {
+    color: #60a5fa !important;
+}
+
+/* What to do sections */
+.what-slide-content h2 {
+    color: #2563eb !important;
+}
+
+.section-wrapper .do-content ul li i {
+    color: #2563eb !important;
+}
+
+/* Video sections */
+.video-links .post-content a {
+    color: #2563eb !important;
+}
+
+.video-links:hover a {
+    color: #60a5fa !important;
+}
+
+/* Volunteer sections */
+.our-volunteers .post-item h5 a {
+    color: #2563eb !important;
+}
+
+.our-volunteers .post-item .profile-icons .profile-icon:hover {
+    background-color: #2563eb !important;
+}
+
+.our-volunteers .post-item:hover p,
+.our-volunteers .post-item:hover .profile-icons {
+    color: #2563eb !important;
+}
+
+.single-volunteer .post-content h3 {
+    color: #2563eb !important;
+}
+
+.single-volunteer .post-content h6 {
+    color: #2563eb !important;
+}
+
+.single-volunteer .post-content .single-social-icon a {
+    color: #2563eb !important;
+}
+
+.single-volunteer .post-content ul li .addr-name {
+    color: #2563eb !important;
+}
+
+/* Want to be volunteer section */
+.want-to-be-volunteer-section .contain-content h6,
+.want-to-be-volunteer-section .contain-content h3 {
+    color: #2563eb !important;
+}
+
+/* FAQ sections */
+.accordion-item .accordion-question .panel-title a {
+    color: #2563eb !important;
+}
+
+.accordion-item .accordion-question .panel-title::before {
+    background-color: #2563eb !important;
+}
+
+.accordion-item .accordion-question.in .panel-title::before {
+    background-color: #60a5fa !important;
+}
+
+/* Contact sections */
+.contact-with-us p i {
+    color: #2563eb !important;
+}
+
+/* Cart and shopping sections */
+.cart-icon .cart-item ul li .cart-content span.price {
+    color: #2563eb !important;
+}
+
+.cart-icon .cart-item ul li span.remove {
+    color: #2563eb !important;
+}
+
+.cart-icon .cart-item ul li span.remove:hover {
+    color: #60a5fa !important;
+}
+
+.cart-icon .cart-item ul li ul li a {
+    color: #2563eb !important;
+}
+
+.cart-icon .cart-item ul li ul li a:hover {
+    color: #60a5fa !important;
+}
+
+/* Progress and skill bars */
+.skill {
+    background: #2563eb !important;
+}
+
+.cause-thumb .circle strong {
+    color: #2563eb !important;
+}
+
+/* Blog pagination */
+.blog-quick-pagination .blog-pagination {
+    color: #2563eb !important;
+    border: 1px solid #2563eb !important;
+}
+
+.blog-quick-pagination .blog-pagination.active,
+.blog-quick-pagination .blog-pagination:hover {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.blog-quick-pagination .blog-nav a {
+    color: #2563eb !important;
+}
+
+.blog-quick-pagination .blog-nav a:hover {
+    color: #60a5fa !important;
+}
+
+/* Right sidebar */
+.right-side-bar .post-content h5 a {
+    color: #2563eb !important;
+}
+
+.right-side-bar .post-content h5 a:hover {
+    color: #60a5fa !important;
+}
+
+.right-side-bar .post-content h6 {
+    color: #2563eb !important;
+}
+
+.right-side-bar .post-item .post-content .entry-meta p i {
+    color: #2563eb !important;
+}
+
+.right-side-bar .post-item .post-content .entry-content .custom-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.right-side-bar .post-item .post-content .entry-content .custom-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Widget sections */
+.widget-category ul li a {
+    color: #2563eb !important;
+}
+
+.widget-category ul li a:hover {
+    color: #60a5fa !important;
+}
+
+.widget-post li .post-content a {
+    color: #2563eb !important;
+}
+
+.widget-post li:hover .post-content a {
+    color: #60a5fa !important;
+}
+
+.widget-causes .widget-content a {
+    color: #2563eb !important;
+}
+
+.widget.widget-tag .widget-body a {
+    color: #2563eb !important;
+    border: 1px solid #2563eb !important;
+}
+
+.widget.widget-tag .widget-body a:hover {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Section title navigation */
+.section-title .swiper-banner-prev,
+.section-title .swiper-banner-next {
+    color: #2563eb !important;
+    border: 1px solid #2563eb !important;
+}
+
+.section-title .swiper-banner-prev:hover,
+.section-title .swiper-banner-next:hover {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Archive slider */
+.archive-slider .swiper-slide img {
+    border: 1px solid #2563eb !important;
+}
+
+/* Doner say section */
+.doner-say-section .thumb-list li {
+    background-color: #2563eb !important;
+}
+
+/* Swiper navigation */
+.swiper-slide.swiper-slide-next .group-btn .custom-btn {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Urgent causes */
+.urgent-top-content h6 {
+    color: #2563eb !important;
+}
+
+.urgent-top-content h3 {
+    color: #2563eb !important;
+}
+
+.urgent-bottom-item .event-item .event-content h5 a {
+    color: #2563eb !important;
+}
+
+.urgent-bottom-item .event-item h3 {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Event items */
+.event-item .event-content h5 a {
+    color: #2563eb !important;
+}
+
+.event-item .event-content p i {
+    color: #2563eb !important;
+}
+
+/* Three column events */
+.three-column-event .three-column-wrapper .cause-content ul li i {
+    color: #2563eb !important;
+}
+
+.three-column-event .three-column-wrapper .event-inner a {
+    color: #2563eb !important;
+}
+
+/* Event list */
+.event-list-section .section-wrapper .list-event-item .list-content h5 a {
+    color: #2563eb !important;
+}
+
+.event-list-section .section-wrapper .list-event-item.active .list-content h5 a,
+.event-list-section .section-wrapper .list-event-item .list-content h5 a:hover {
+    color: #60a5fa !important;
+}
+
+.event-list-section .section-wrapper .list-event-item .list-content p i {
+    color: #2563eb !important;
+}
+
+.event-list-section .section-wrapper .list-event-item .list-date {
+    background-color: #2563eb !important;
+}
+
+.event-list-section .section-wrapper .list-event-item .list-date h3 {
+    color: #ffffff !important;
+}
+
+.event-list-section .section-wrapper .list-event-item .list-date p {
+    color: #ffffff !important;
+}
+
+/* Countdown sections */
+.count-down-section .count-down-item h3,
+.count-down-section .count-down-item h2 {
+    color: #2563eb !important;
+}
+
+.countdown li .count-number {
+    color: #2563eb !important;
+}
+
+/* Progress sections */
+.progress-count .back span {
+    color: #2563eb !important;
+}
+
+.progress-item .target h5 {
+    color: #2563eb !important;
+}
+
+/* Recent causes */
+.recent-cause-slider .cause-content .cause-header a {
+    color: #2563eb !important;
+}
+
+.recent-cause-slider .cause-content .cause-header a:hover {
+    color: #60a5fa !important;
+}
+
+.recent-cause-slider .cause-content h4 {
+    color: #2563eb !important;
+}
+
+.recent-cause-slider .cause-content ul li span {
+    color: #2563eb !important;
+}
+
+.recent-cause-slider .cause-content ul li p {
+    color: #2563eb !important;
+}
+
+.recent-cause-slider .cause-content ul li:after {
+    background-color: #2563eb !important;
+}
+
+/* Cause items */
+.cause-item .cause-content h4 {
+    color: #2563eb !important;
+}
+
+.cause-item .cause-content ul li span {
+    color: #2563eb !important;
+}
+
+.cause-item .cause-content ul li p {
+    color: #2563eb !important;
+}
+
+.cause-item .cause-content ul li:after {
+    background-color: #2563eb !important;
+}
+
+.cause-item:hover .cause-header a {
+    color: #60a5fa !important;
+}
+
+.cause-item:hover .cause-thumb img {
+    border-color: #2563eb !important;
+}
+
+/* Recent section */
+.recent-top h6 {
+    color: #2563eb !important;
+}
+
+.recent-top .cause-left p {
+    color: #2563eb !important;
+}
+
+/* What to do slider */
+.what-to-do-slider .slide-item .what-slide-thumb img {
+    border-color: #2563eb !important;
+}
+
+/* Cause content */
+.cause-content:hover {
+    border-color: #2563eb !important;
+}
+
+/* Form elements */
+.donate-form .form select {
+    border-color: #2563eb !important;
+}
+
+/* Message form */
+.message-form .form-group input:focus,
+.message-form .form-group textarea:focus {
+    border-color: #2563eb !important;
+}
+
+/* Mobile menu */
+.mobile-menu-area .m-menu li a .fa-plus,
+.mobile-menu-area .m-menu li a .fa-angle-down {
+    color: #2563eb !important;
+}
+
+.main-menu li a .fa-plus,
+.main-menu li a .fa-angle-down {
+    color: #2563eb !important;
+}
+
+/* Group buttons */
+.group-btn .custom-btn:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Countdown numbers */
+.count-down-section .countdown li .count-number {
+    color: #2563eb !important;
+}
+
+/* Custom button overrides */
+.custom-btn,
+.custom-btn:before,
+.custom-btn:after {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.custom-btn:hover,
+.custom-btn:hover:before,
+.custom-btn:hover:after {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Recent cause slider */
+.recent-cause-slider .cause-item,
+.recent-cause-slider .cause-item:hover {
+    border-color: #2563eb !important;
+}
+
+/* Skill bars */
+.skill,
+.skill:before,
+.skill:after {
+    background: #2563eb !important;
+}
+
+/* Cause content headers */
+.cause-item .cause-content h4,
+.cause-item .cause-content h4:hover {
+    color: #2563eb !important;
+}
+
+/* Recent cause slider specific */
+.recent-cause-slider,
+.recent-cause-slider .cause-item {
+    border-color: #2563eb !important;
+}
+
+/* Form select elements */
+html body .volunteer-form .form-group select,
+html body .donate-form .form-group select {
+    border-color: #2563eb !important;
+}
+
+/* Comprehensive override for any remaining green colors */
+[style*="#2cc391"],
+[style*="color: #2cc391"],
+[style*="background-color: #2cc391"],
+[style*="background: #2cc391"],
+[style*="border-color: #2cc391"],
+[style*="border: 1px solid #2cc391"] {
+    color: #2563eb !important;
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+}
+
+/* Main menu active states */
+.main-menu li.active a,
+.main-menu li.active a:before,
+.main-menu li.active a:after {
+    color: #2563eb !important;
+    background-color: #2563eb !important;
+}
+
+/* Newslater section background */
+.newslater-section {
+    background-color: #2563eb !important;
+}
+
+/* Background color overrides */
+[style*="background-color: #2cc391"],
+[style*="background: #2cc391"] {
+    background-color: #2563eb !important;
+}
+
+/* Skill bar overrides */
+.skill,
+.skill:before,
+.skill:after {
+    background: #2563eb !important;
+}
+
+/* Border overrides */
+[style*="border: 1px solid #2cc391"],
+[style*="border-color: #2cc391"] {
+    border-color: #2563eb !important;
+}
+
+/* Blog section hover effects */
+.blog-section .section-wrapper .post-item:hover,
+.blog-section .section-wrapper .post-item:hover .post-thumb img,
+.blog-section .section-wrapper .post-item:hover .post-content h5 a {
+    border-color: #2563eb !important;
+    color: #2563eb !important;
+}
+
+/* Blog section post items */
+.blog-section .section-wrapper .post-item,
+.blog-section .section-wrapper .post-item .post-content h5 a {
+    color: #2563eb !important;
+}
+
+/* FontAwesome icons - preserve original colors but override green */
+.fa, .fas, .far, .fab, .fal,
+.fa *, .fas *, .far *, .fab *, .fal * {
+    color: inherit !important;
+}
+
+/* What to do slider images */
+.what-to-do-slider .slide-item .what-slide-thumb img {
+    border-color: #2563eb !important;
+}
+
+/* Cause item hover effects */
+.cause-item:hover,
+.cause-item:hover .cause-thumb img,
+.cause-item:hover .cause-header a {
+    border-color: #2563eb !important;
+    color: #2563eb !important;
+}
+
+/* Cause content hover */
+.cause-content:hover {
+    border-color: #2563eb !important;
+} 

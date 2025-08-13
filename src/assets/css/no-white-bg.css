@@ -1,0 +1,254 @@
+﻿/* Comprehensive White Background Removal - Global Override */
+
+/* Body and main container */
+body {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+    color: #ffffff !important;
+}
+
+/* Remove all white backgrounds from Bootstrap and other elements */
+.bg-white,
+.bg-light,
+.bg-light-gray,
+.bg-light-gray-100,
+.bg-light-gray-200,
+.bg-light-gray-300,
+.bg-light-gray-400,
+.bg-light-gray-500,
+.white-bg,
+.light-bg,
+.light-gray-bg {
+    background: transparent !important;
+}
+
+/* Override any card backgrounds */
+.card,
+.card-body,
+.card-header,
+.card-footer,
+.testimonial-card,
+.contact-card,
+.info-card,
+.loan-form-wrapper,
+.contact-form-wrapper,
+.contact-info-wrapper,
+.membership-card,
+.mission-card,
+.service-card,
+.trustee-card,
+.post-item {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    border: 1px solid #2c3e50 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+/* Ensure all sections have dark backgrounds */
+section {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+}
+
+/* Page headers */
+.page-header {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 25%, #2563eb 75%, #60a5fa 100%) !important;
+}
+
+/* Hero sections */
+.hero-section,
+.loan-hero,
+.contact-hero,
+.testimonials-hero {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 25%, #2563eb 75%, #60a5fa 100%) !important;
+}
+
+/* Content sections */
+.loan-info-section,
+.loan-form-section,
+.contact-form-section,
+.contact-info-section,
+.testimonials-section,
+.about-foundation-section,
+.mission-vision-section,
+.services-section,
+.membership-section,
+.trustees-section {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+}
+
+/* Override any remaining white text */
+.text-dark,
+.text-black {
+    color: #ffffff !important;
+}
+
+/* Ensure all text is visible on dark background */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+p, span, div {
+    color: #ecf0f1 !important;
+}
+
+/* Override any form elements that might have white backgrounds */
+input,
+select,
+textarea,
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 0.2rem rgba(33, 147, 176, 0.25) !important;
+}
+
+/* Button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #60a5fa) !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1a7a8f, #5bc0d9) !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    border: 1px solid #2563eb !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #2563eb, #60a5fa) !important;
+    color: #ffffff !important;
+}
+
+/* Container overrides */
+.container,
+.container-fluid,
+.row,
+.col-lg-4,
+.col-md-6,
+.col-12 {
+    background: transparent !important;
+}
+
+/* Navbar styling */
+.navbar {
+    background: rgba(18, 18, 18, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #60a5fa !important;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    background: transparent !important;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a {
+    color: #60a5fa !important;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff !important;
+}
+
+/* Social links */
+.social-link {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    color: #2563eb !important;
+}
+
+.social-link:hover {
+    background: #2563eb !important;
+    color: white !important;
+}
+
+/* Filter buttons */
+.filter-btn {
+    background: linear-gradient(135deg, #2563eb, #60a5fa) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    color: #60a5fa !important;
+}
+
+/* Additional comprehensive styling */
+* {
+    box-sizing: border-box;
+}
+
+/* Override any remaining white elements */
+.white,
+.light,
+.light-gray {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Gallery specific */
+.gallery-item,
+.gallery-overlay {
+    background: transparent !important;
+}
+
+/* Testimonials specific */
+.testimonial-content,
+.testimonial-author,
+.author-info {
+    color: #ecf0f1 !important;
+}
+
+/* Contact specific */
+.contact-person,
+.person-info {
+    background: linear-gradient(135deg, rgba(33, 147, 176, 0.15) 0%, rgba(109, 213, 237, 0.1) 100%) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card,
+    .info-card,
+    .testimonial-card {
+        margin-bottom: 20px !important;
+    }
+}
+
+/* Animation for smooth transitions */
+.card,
+.info-card,
+.testimonial-card,
+.contact-card {
+    transition: all 0.3s ease !important;
+}
+
+.card:hover,
+.info-card:hover,
+.testimonial-card:hover,
+.contact-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+} 

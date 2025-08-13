@@ -1,0 +1,255 @@
+﻿/* Professional Color Theme - Black and Blue Only */
+/* This file ensures all colors across the website use only black and blue shades */
+
+/* Professional Color Theme - Black and Blue Only */
+/* This file ensures all colors across the website use only black and blue shades */
+
+/* Remove aggressive black color overrides - allow black colors to be used */
+/* Only override specific elements that should be white */
+
+/* Override any CSS variables that might be black */
+:root {
+    --text-color: #ffffff !important;
+    --text-primary: #ffffff !important;
+    --text-secondary: #ffffff !important;
+    --text-dark: #ffffff !important;
+    --text-light: #ffffff !important;
+}
+
+/* Force all links to be blue or white */
+a {
+    color: #2563eb !important;
+}
+
+a:hover, a:active, a:focus {
+    color: #60a5fa !important;
+}
+
+/* Ensure buttons and interactive elements use blue */
+.btn, button, input[type="submit"], input[type="button"] {
+    color: #ffffff !important;
+    background-color: #2563eb !important;
+}
+
+.btn:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #60a5fa !important;
+    color: #ffffff !important;
+}
+
+/* Remove any red colors except for danger alerts */
+[style*="#ff0000"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger),
+[style*="#f00"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger),
+[style*="red"]:not(.alert-danger):not(.alert-danger *):not(.text-danger):not(.btn-danger) {
+    background: var(--bg-secondary) !important;
+    color: #ffffff !important;
+}
+
+/* Specific overrides for main content areas */
+.main-content,
+.content-area,
+.entry-content,
+.post-content,
+.page-content {
+    color: #ffffff !important;
+}
+
+/* Override any dark colors from normalige.css */
+[style*="#777777"],
+[style*="#2b3539"],
+[style*="#000000"]:not(.glass-navbar):not(.glass-navbar *):not(.hero-section):not(.hero-section *):not(select):not(select *):not(.form-select):not(.form-select *):not(.donation-form):not(.donation-form *) {
+    color: #ffffff !important;
+}
+
+/* Ensure hero section text stays white */
+.hero-section,
+.hero-section *,
+.hero-content,
+.hero-content * {
+    color: #ffffff !important;
+}
+
+/* Ensure navbar text stays white */
+.glass-navbar,
+.glass-navbar * {
+    color: #ffffff !important;
+}
+
+/* Override normalige.css specific selectors */
+.normalige-css body,
+.normalige-css p,
+.normalige-css h1, .normalige-css h2, .normalige-css h3, .normalige-css h4, .normalige-css h5, .normalige-css h6,
+.normalige-css span,
+.normalige-css div {
+    color: #ffffff !important;
+}
+
+/* Fix for normalige.css colors */
+.normalige-css * {
+    color: #ffffff !important;
+}
+
+/* Specific overrides for normalige.css elements */
+.screen-reader-text,
+.screen-reader-text:focus,
+.alignleft,
+.alignright,
+.aligncenter,
+.clear,
+.clear:before,
+.clear:after {
+    color: #ffffff !important;
+    background: inherit !important;
+}
+
+/* Override any remaining green colors in normalige.css */
+a:hover,
+a:active {
+    color: #2563eb !important;
+}
+
+/* Preserve original colors for specific elements */
+.alert-danger,
+.text-danger,
+.btn-danger,
+.badge-danger {
+    color: #dc3545 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+
+/* Override any red colors that shouldn't be red */
+*:not(.alert-danger):not(.text-danger):not(.btn-danger):not(.badge-danger):not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not(.fa *):not(.fas *):not(.far *):not(.fab *):not(.fal *) {
+    color: #ffffff !important;
+}
+
+/* Remove any yellow/orange colors */
+[style*="#ffff00"], [style*="#ff0"], [style*="yellow"], [style*="#ffa500"], [style*="orange"] {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Remove any purple/pink colors */
+[style*="#800080"], [style*="purple"], [style*="#ffc0cb"], [style*="pink"] {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Ensure all backgrounds use our theme */
+[style*="background-color: #f2f6f9"], [style*="background-color: #ffffff"], [style*="background-color: #f6faff"] {
+    background-color: var(--bg-primary) !important;
+}
+
+/* Ensure all text colors use our theme */
+[style*="color: #626c84"], [style*="color: #696969"], [style*="color: #333"] {
+    color: var(--text-secondary) !important;
+}
+
+/* Specific page overrides */
+.page-header {
+    background: var(--gradient-primary) !important;
+}
+
+.banner-section {
+    background: var(--bg-primary) !important;
+}
+
+/* Footer specific overrides */
+.footer-section {
+    background: var(--gradient-primary) !important;
+}
+
+/* Admin panel overrides */
+.admin-section, .dashboard-section {
+    background: var(--bg-primary) !important;
+}
+
+/* FINAL OVERRIDE - Remove ALL black colors from entire project */
+/* Specific overrides for elements that should be white */
+/* Only target specific sections that need white text */
+
+/* EXCEPTIONS - Make specific elements black */
+/* FontAwesome icons - preserve original colors */
+.fa, .fas, .far, .fab, .fal,
+.fa *, .fas *, .far *, .fab *, .fal * {
+    color: inherit !important;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Arrows and navigation elements */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active,
+.swiper-button-next i,
+.swiper-button-prev i,
+.swiper-button-next::after,
+.swiper-button-prev::after,
+.swiper-pagination-bullet::after,
+.swiper-pagination-bullet-active::after {
+    color: #000000 !important;
+}
+
+/* Latest news section */
+.blog-section,
+.blog-section *,
+.blog-section h1, .blog-section h2, .blog-section h3, .blog-section h4, .blog-section h5, .blog-section h6,
+.blog-section p,
+.blog-section span,
+.blog-section div,
+.blog-section a,
+.blog-section li,
+.post-item,
+.post-item *,
+.post-content,
+.post-content *,
+.entry-content,
+.entry-content *,
+.widget-post,
+.widget-post * {
+    color: #000000 !important;
+}
+
+/* News/Recent posts sections */
+.recent-section,
+.recent-section *,
+.news-section,
+.news-section *,
+.latest-news,
+.latest-news *,
+.recent-posts,
+.recent-posts * {
+    color: #000000 !important;
+}
+
+/* Blog and post related elements */
+.blog,
+.blog *,
+.post,
+.post *,
+.article,
+.article *,
+.entry,
+.entry * {
+    color: #000000 !important;
+}
+
+/* Donate form select override - Force black text */
+.donation-form select[name="category"],
+.donation-form select[name="category"] *,
+.donation-form select[name="category"] option,
+.donation-form select[name="category"] option * {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Additional specificity for donate form */
+.donation-form .form-group select,
+.donation-form .form-group select *,
+.donation-form .form-group select option,
+.donation-form .form-group select option * {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+ 
